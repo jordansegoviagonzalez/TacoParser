@@ -6,6 +6,7 @@ namespace LoggingKata
     {
         public void LogFatal(string log, Exception exception = null)
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Fatal: {log}, Exception {exception}");
         }
 
